@@ -43,11 +43,11 @@ To get started with Luminary on your local machine, follow these simple steps:
 
 Once Luminary is set up and running, you can begin exploring its features:
 
-1. **Browsing Products**: Navigate through the available categories or use the search functionality to find products of interest.
+1. **Browsing Products**: Navigate through the available categories Men, Women and Teens.
 
-2. **Product Details**: Click on a product to view detailed information, including description, price, and available variants.
+2. **Product Details**: Click on a product to view detailed information, including description, price, and availablility.
 
-3. **Adding to Cart**: Easily add products to your cart with a single click, and adjust quantities as needed.
+3. **Adding to Cart**: Easily add products to your cart with a single click.
 
 4. **Checkout Process**: Proceed to the checkout page to review your selected items, enter shipping information, and complete your purchase securely.
 
