@@ -23,7 +23,7 @@ async function getData(slug: string) {
   return data;
 }
 
-export const dynamic = 'force-dynamic'
+export const dynamic = "force-dynamic";
 
 export default async function ProductPage({
   params,
@@ -97,7 +97,6 @@ export default async function ProductPage({
                 key={data._id}
                 price_id={data.price_id}
               />
-              <Button variant="secondary">Checkout now</Button>
             </div>
 
             <p className="mt-12 text-base text-gray-500 tracking-wide">
