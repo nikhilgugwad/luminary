@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Luminary 
 
-## Getting Started
+## Description
 
-First, run the development server:
+Luminary is an e-commerce project aimed at providing a seamless shopping experience for users. With a focus on simplicity and functionality, Luminary offers a range of features for both buyers and sellers. From browsing products to secure checkout, Luminary ensures a smooth transaction process. Built with modern technologies, Luminary is designed to be scalable and customizable, making it suitable for various e-commerce needs.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To get started with Luminary on your local machine, follow these simple steps:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone this repository to your local machine using the following command:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```
+   git clone https://github.com/your-username/luminary.git
+   ```
 
-## Learn More
+2. Navigate into the project directory:
 
-To learn more about Next.js, take a look at the following resources:
+   ```
+   cd luminary
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Install dependencies using npm or yarn:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```
+   npm install
+   # or
+   yarn install
+   ```
 
-## Deploy on Vercel
+4. Once all dependencies are installed, you can start the development server by running:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. Open your web browser and visit `http://localhost:3000` to view Luminary in action.
+
+
+## Usage
+
+Once Luminary is set up and running, you can begin exploring its features:
+
+1. **Browsing Products**: Navigate through the available categories or use the search functionality to find products of interest.
+
+2. **Product Details**: Click on a product to view detailed information, including description, price, and available variants.
+
+3. **Adding to Cart**: Easily add products to your cart with a single click, and adjust quantities as needed.
+
+4. **Checkout Process**: Proceed to the checkout page to review your selected items, enter shipping information, and complete your purchase securely.
+
+Additionally, to manage content and products efficiently, Luminary utilizes a CMS (Content Management System) powered by Sanity. You can access the CMS at [https://luminary.sanity.studio](https://luminary.sanity.studio) to manage your product inventory, descriptions, and other content-related tasks.
+
+Feel free to explore and test out different functionalities to get a comprehensive understanding of Luminary.
+
+## Technologies Used
+
+Luminary utilizes the following technologies and dependencies:
+
+- [Next.js](https://nextjs.org/) - A React framework for building server-side rendered and static web applications.
+- [Sanity](https://www.sanity.io/) - A headless CMS for managing content and data.
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
+- [Stripe](https://stripe.com/) - A payment processing platform for accepting payments online.
+- [use-shopping-cart](https://github.com/dayhaysoos/use-shopping-cart) - A library for managing shopping cart state in React applications.
+- [Lucide](https://lucide.dev/) - An open-source icon set for web projects.
+
+Additionally, various other dependencies and development tools are used for building, linting, and styling the project.
+
+## Contributing
+
+Contributions to Luminary are welcome and encouraged! If you'd like to contribute to the project, please follow these steps:
+
+1. Fork the repository on GitHub.
+2. Clone your forked repository to your local machine.
+3. Create a new branch for your feature or bug fix:
+4. Make your changes and commit them with descriptive commit messages.
+5. Push your changes to your forked repository:
+6. Open a pull request on the original repository's `main` branch, describing your changes and referencing any related issues.
+7. Wait for feedback and address any review comments if necessary.
+8. Once your pull request is approved and merged, your changes will be reflected in the main repository.
+
+
+
+
+
+
+
+
