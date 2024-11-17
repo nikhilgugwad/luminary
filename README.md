@@ -1,91 +1,137 @@
-# Luminary 
+# **Luminary**
 
-## Description
+## **Table of Contents**
 
-Luminary is an e-commerce project aimed at providing a seamless shopping experience for users. With a focus on simplicity and functionality, Luminary offers a range of features for both buyers and sellers. From browsing products to secure checkout, Luminary ensures a smooth transaction process. Built with modern technologies, Luminary is designed to be scalable and customizable, making it suitable for various e-commerce needs.
+1. [Introduction](#introduction)
+2. [Core Features](#core-features)
+3. [Tech Stack Used](#tech-stack-used)
+4. [Setup Instructions](#setup-instructions)
+5. [API Endpoints](#api-endpoints)
+6. [Deployment](#deployment)
+7. [Future Improvements](#future-improvements)
+8. [Collaborations and Contributions](#collaborations-and-contributions)
+9. [Additional Notes](#additional-notes)
 
-## Installation
+## **Introduction**
 
-To get started with Luminary on your local machine, follow these simple steps:
+**Luminary** is a modern web application designed for a seamless and flexible experience for managing products, categories, and images. It is built using Next.js for the frontend and Sanity.io for content management, allowing for easy customization and management of dynamic content. It supports a wide range of features to manage and display products with rich media content and flexible categorization.
 
-1. Clone this repository to your local machine using the following command:
+The application provides an easy-to-use admin interface (via Sanity Studio) for managing product listings and other content. It supports multi-image handling, category referencing, and other essential features for e-commerce and product display websites.
 
-   ```
-   git clone https://github.com/your-username/luminary.git
-   ```
+## **Core Features**
 
-2. Navigate into the project directory:
+- **Product Management**: Users can create and manage products, including images, descriptions, prices, and categories.
+- **Category Management**: Create and manage product categories that can be referenced in individual product entries.
+- **Hero Images**: Set up two hero images that can be displayed on the homepage, offering visual appeal and marketing functionality.
+- **Dynamic Content**: Real-time updates to the product catalog via Sanity’s CMS.
+- **Responsive Design**: The app is optimized for mobile and desktop use.
+- **Stripe Integration**: Integration with Stripe for payment processing and pricing management.
 
-   ```
+## **Tech Stack Used**
+
+- **Frontend**:
+  - **Next.js**: A React framework for server-side rendering and static site generation.
+  - **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+  - **Shadcn UI**: A component library for styled UI components.
+  - **TypeScript**: A superset of JavaScript that offers optional static typing for better developer experience.
+- **Backend**:
+  - **Sanity.io**: A headless CMS for managing content (product listings, categories, images), to manage content and products efficiently we can utilize.
+  - **Stripe**: For payment processing, including product pricing integration.
+- **Deployment**:
+  - **Vercel**: A platform for deploying Next.js applications [Luminary](https://luminary.vercel.app).
+  - **Sanity**: Hosted CMS solution [Sanity Studio](https://luminary.sanity.studio).
+
+## **Setup Instructions**
+
+Follow these steps to set up the project locally:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/nikhilgugwad/luminary-ecommerce-app.git
    cd luminary
    ```
 
-3. Install dependencies using npm or yarn:
+2. **Install dependencies**:
+   Use `npm` or `yarn` to install the necessary packages:
 
-   ```
+   ```bash
    npm install
    # or
    yarn install
    ```
 
-4. Once all dependencies are installed, you can start the development server by running:
+3. **Set up environment variables**:
+   Create a `.env.local` file at the root of your project with the following content:
 
+   ```env
+   NEXT_PUBLIC_SANITY_PROJECT_ID=your-project-id
+   NEXT_PUBLIC_SANITY_DATASET=production
+   STRIPE_SECRET_KEY=your-stripe-secret-key
    ```
+
+4. **Start the development server**:
+
+   ```bash
    npm run dev
    # or
    yarn dev
    ```
 
-5. Open your web browser and visit `http://localhost:3000` to view Luminary in action.
+   This will start the Next.js server at `http://localhost:3000`.
 
+## **API Endpoints**
 
-## Usage
+Here are the main API endpoints that your app interacts with:
 
-Once Luminary is set up and running, you can begin exploring its features:
+### **Sanity API Endpoints**
 
-1. **Browsing Products**: Navigate through the available categories Men, Women and Teens.
+Sanity is used to fetch and manage content. The following endpoints are used for retrieving products and categories:
 
-2. **Product Details**: Click on a product to view detailed information, including description, price, and availablility.
+- **GET `/api/products`**: Fetch all products.
+- **GET `/api/categories`**: Fetch all product categories.
 
-3. **Adding to Cart**: Easily add products to your cart with a single click.
+### **Stripe API Endpoints**
 
-4. **Checkout Process**: Proceed to the checkout page to review your selected items, enter shipping information, and complete your purchase securely.
+- **POST `/api/checkout`**: Initiates the Stripe checkout process.
 
-Additionally, to manage content and products efficiently, Luminary utilizes a CMS (Content Management System) powered by Sanity. You can access the CMS at [https://luminary.sanity.studio](https://luminary.sanity.studio) to manage your product inventory, descriptions, and other content-related tasks.
+Refer to the official [Sanity API](https://www.sanity.io/docs/http-api) and [Stripe API documentation](https://stripe.com/docs/api) for more details.
 
-Feel free to explore and test out different functionalities to get a comprehensive understanding of Luminary.
+## **Deployment**
 
-## Technologies Used
+### **Vercel (Frontend Deployment)**
 
-Luminary utilizes the following technologies and dependencies:
+1. Create an account on [Vercel](https://vercel.com/).
+2. Connect your GitHub repository and deploy the app to Vercel.
+3. Set the environment variables in the Vercel dashboard (same as `.env.local` above).
+4. Once deployed, the app will be available at `https://your-project-name.vercel.app`.
 
-- [Next.js](https://nextjs.org/) - A React framework for building server-side rendered and static web applications.
-- [Sanity](https://www.sanity.io/) - A headless CMS for managing content and data.
-- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
-- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
-- [Stripe](https://stripe.com/) - A payment processing platform for accepting payments online.
-- [use-shopping-cart](https://github.com/dayhaysoos/use-shopping-cart) - A library for managing shopping cart state in React applications.
-- [Lucide](https://lucide.dev/) - An open-source icon set for web projects.
+### **Sanity (Content Management)**
 
-Additionally, various other dependencies and development tools are used for building, linting, and styling the project.
+1. Set up your Sanity Studio by following the instructions in the [Sanity documentation](https://www.sanity.io/docs/getting-started).
 
-## Contributing
+## **Future Improvements**
 
-Contributions to Luminary are welcome and encouraged! If you'd like to contribute to the project, please follow these steps:
+- **Payment Integration**: Add support for multiple payment methods with Stripe (e.g., Apple Pay, Google Pay).
+- **Advanced Product Filters**: Implement advanced search and filtering for product categories.
+- **Admin Dashboard**: Improve the backend experience with a comprehensive admin dashboard.
+- **Localization**: Add multi-language support for different regions.
+- **User Authentication**: Implement user authentication for order tracking and account management.
 
-1. Fork the repository on GitHub.
-2. Clone your forked repository to your local machine.
-3. Create a new branch for your feature or bug fix:
-4. Make your changes and commit them with descriptive commit messages.
-5. Push your changes to your forked repository:
-6. Open a pull request on the original repository's `main` branch, describing your changes and referencing any related issues.
-7. Wait for feedback and address any review comments if necessary.
-8. Once your pull request is approved and merged, your changes will be reflected in the main repository.
+## **Collaborations and Contributions**
 
+We welcome contributions from the community! To contribute:
 
+1. Fork the repository and clone it locally.
+2. Create a feature branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -m 'Add your feature'`).
+4. Push your changes to your fork (`git push origin feature/your-feature`).
+5. Open a pull request describing the changes.
 
+Please ensure your code adheres to the coding standards and passes all the tests before creating a pull request.
 
+## **Additional Notes**
 
-
-
-
+- **Sanity Studio**: The Sanity Studio allows easy content management for the project, especially for products and categories. You can access it via the admin panel after setting up the project.
+- **Tailwind CSS**: Used for styling across the application with a utility-first approach for faster development.
+- **Shadcn UI**: A set of pre-styled components to accelerate the UI development process.
